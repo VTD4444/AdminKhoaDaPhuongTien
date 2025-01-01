@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+button {
+    border: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px; /* Giảm chiều rộng */
+    height: 400px; /* Tăng chiều cao để chứa nút */
+    background-color: #e0e0e0; /* Màu nền xám nhạt */
+    border-radius: 12px; /* Tăng độ bo tròn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.content-section {
+    display: flex;
+    flex: 1;
+}
+
+.left-section {
+    background-color: #dcdcdc; /* Màu nền xám */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section .icon {
+    font-size: 150px; /* Kích thước icon phù hợp */
+    color: #888; /* Màu xám cho icon */
+    margin-bottom: 30px;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px 20px; /* Giảm padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    margin-bottom: 20px; /* Giảm khoảng cách dưới */
+    font-size: 20px; /* Giảm kích thước chữ */
+    color: #555; /* Màu xám đậm */
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Giảm khoảng cách dưới */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.input-group .input-icon {
+    background-color: #e0e0e0; /* Màu nền xám nhạt */
+    padding: 10px;
+    font-size: 16px; /* Giảm kích thước icon */
+    color: #666;
+}
+
+.input-group input {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px; /* Giảm kích thước chữ */
+    margin-bottom: 15px; /* Giảm khoảng cách dưới */
+    margin-top: 15px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.full-width-button {
+    display: block;
+    padding: 12px; /* Căn chỉnh padding */
+    font-size: 14px; /* Kích thước chữ phù hợp */
+    color: #fff;
+    background-color: #f58220;
+    text-align: center;
+    border-radius: 8px; /* Bo tròn nút */
+    text-decoration: none; /* Xóa gạch chân */
+    margin-top: 20px; /* Thêm khoảng cách bên trên nút */
+    transition: background-color 0.3s;
+    width: 94%;
+}
+
+.full-width-button:hover {
+    background-color: #d9711b;
+}
+
+a {
+    color: #f58220;
+    text-decoration: none;
+    font-size: 12px; /* Giảm kích thước chữ */
+}
+
+a:hover {
+    text-decoration: underline;
+}

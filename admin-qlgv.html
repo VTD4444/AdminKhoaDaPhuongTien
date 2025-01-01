@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <title>Khoa đa phương tiện</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/admin-style.css">
+</head>
+<script>
+    $(function () {
+        $("#navbar").load("./admin-navbar.html");
+    });
+</script>
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <div>
+            <a href="#" class="admin-btn" id="add-subject-btn">Thêm giảng viên</a>
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr style="background-color: #007BFF; color: white;">
+                        <th>ID</th>
+                        <th>Tên giảng viên</th>
+                        <th>Học vị</th>
+                        <th>Bộ môn</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #D9E1F2;">
+                        <td>1</td>
+                        <td>Cột 1</td>
+                        <td>Cột 2</td>
+                        <td>Cột 3</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Chỉnh sửa</a></td>
+                    </tr>
+                    <tr style="background-color: #D9E1F2;">
+                        <td>2</td>
+                        <td>Cột 1</td>
+                        <td>Cột 2</td>
+                        <td>Cột 3</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Chỉnh sửa</a></td>
+                    </tr>
+                    <tr style="background-color: #D9E1F2;">
+                        <td>3</td>
+                        <td>Cột 1</td>
+                        <td>Cột 2</td>
+                        <td>Cột 3</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Chỉnh sửa</a></td>
+                    </tr>
+                    <tr style="background-color: #D9E1F2;">
+                        <td>4</td>
+                        <td>Cột 1</td>
+                        <td>Cột 2</td>
+                        <td>Cột 3</td>
+                        <td><a href="#">Xóa</a></td>
+                        <td><a href="#">Chỉnh sửa</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="overlay">
+        <div id="add-subject-panel" class="d-flex">
+            <h2>Thêm giảng viên</h2>
+            <form>
+                <div>
+                    <label for="ten-gv">Tên GV:</label>
+                    <input type="text" id="ten-gv" placeholder="Nhập tên giảng viên">
+                </div>
+                <div>
+                    <label for="bo-mon">Bộ môn:</label>
+                    <select id="bo-mon">
+                        <option>Chọn bộ môn</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="loai-mon">Loại môn:</label>
+                    <select id="loai-mon">
+                        <option>Chọn loại môn</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ghi-chu">Ghi chú:</label>
+                    <input type="text" id="ghi-chu" placeholder="Nhập ghi chú">
+                </div>
+                <div>
+                    <label for="ky-hoc">Kỳ học:</label>
+                    <select id="ky-hoc">
+                        <option>Chọn kỳ học</option>
+                    </select>
+                </div>
+                <button class="admin-btn" type="button" id="close-panel">Thêm GV</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#add-subject-btn").click(function(event) {
+                event.preventDefault();
+                $("#overlay").toggleClass("d-flex");
+            });
+
+            $("#overlay").click(function(event) {
+                if (event.target === this) {
+                    $(this).removeClass("d-flex");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
